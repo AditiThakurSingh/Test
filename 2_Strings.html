@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings and functions</h1>
+    <script>
+        var a= 'Aditi' 
+        var b= 'Thakur'
+        var c= 'Singh diti'
+        console.log(a+b+c)
+        var name= `${a} ${b} ${c}`
+        // Not single quote, the button below esc
+        console.log(name)
+        var charecterlength= name.length
+        console.log(`Length of string is ${charecterlength}`)
+        var pos= name.indexOf('iti')
+        console.log(pos)
+        // The first time it appears
+        var posit= name.lastIndexOf('iti')
+        console.log(posit)
+        // The last time it appears. Note capital I in command
+        var substr= name.slice(9,15)
+        console.log(substr)
+        // 15th charecter not included
+        // Other ways to substring
+        var substr1 = name.substring(1,7);
+       var substr2 = name.substr(1,3);
+       console.log(substr1)
+       console.log(substr2)
+       var replace= name.replace('Aditi','Sirisha')
+       console.log(replace)
+       console.log(name)
+
+       console.log(name.toUpperCase());
+      console.log(name.toLowerCase());
+    //   Whole string upper or lower case
+    console.log(name + " " + replace)
+    // Concatenation
+    var whitespacesinfront="              Apple        ball         cat   "
+    console.log(whitespacesinfront.trim())
+    // The brackets after trim are necessary
+    var char=name.charAt(1)
+    console.log(char)
+    // To extract any character from a string
+    </script>
+</body>
+</html>
