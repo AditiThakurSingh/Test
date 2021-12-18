@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <input type="checkbox"> <button class = "butt">Hemlo</button>
+    <li>apple</li>
+    <li>banana</li>
+    <button class= "btn">learn</button>
+</body>
+</html>
+<script>
+//  3 methods to access the parts 
+//  1st 
+//  document.lastElementChild.firstElementChild.innerHTML.style.color='red' 
+
+//  2nd 
+document.querySelector('li').style.color = 'red'
+document.querySelector('input').click()
+console.log(document.querySelector('li').style.color)
+document.querySelectorAll('button')[1].innerHTML = 'Aditi'
+console.log(document.querySelector('button').classList)
+document.querySelector('button').classList.add = "on"
+console.log(document.querySelector('button').classList)
+// instead of add put ,remove to remove a class. so that we can add sets of properties easily by packaging it like a class
+// difference between innerHtml and textContent is that innerHtml can be used tto obtain/manipulate everything inside the specifi tag whereas textContent is strictly for text
+// PLEASE NOTE THAT IN DOM CAMEL WAY OF WRITING IS USED (querySelector)
+// only 1st object of li is action taken upon. For all things under a class, write "document.queryselectorAll("tag")[0,1,2...]" and write these again and again till all the parts of tag are covered.
+// things inside tags like class, id href are attributes. you can use document.querySelector('tag').attributes/getAttribute("name of attribute"/setAttribute("present attribute","change to attribute") to see all attributes/1 specific attribute/change attribute
+
+</script>
