@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bellboy1name= 'Timmy'
+        var bellboy2name= '18'
+        var bellboy1languauges= ['English','french']
+        console.log(bellboy1name)
+
+        var bellboy1= {
+            name:"Timmy",
+            age: "18",
+            languages: ["English","French"],
+            takemysuitecase: function(){
+                alert('moved to your room sir')
+            }
+        }
+         console.log(bellboy1)
+         console.log(bellboy1.name)
+
+        function Bellboy(name,age,languages,takemysuitecase){
+            this.name= name,
+            this.age=age,
+            this.languages=languages
+            this.takemysuitecase=function(){
+                alert('moved to your room sir')
+            }
+        }
+        var bellboy1again= new Bellboy("Timmy",18,["English","French"])
+        console.log(bellboy1again.name)
+        // be;lboy1.name is object and bellboy1,takemysuitecase is method as its a function and we SHOULD use brackets while calling it
+        bellboy1.takemysuitecase();
+        bellboy1again.takemysuitecase();
+        // This looks similar to lines of code we used to play audio. where bellboy1 and bellboy1again are like tom1 and Bellboy is Audio and the function takemysuitecase is play. There might be predefined lines in play function.
+    </script>
+</body>
+</html>
